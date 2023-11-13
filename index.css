@@ -1,0 +1,59 @@
+nav{
+    padding:20px;
+    background: linear-gradient(0deg, #924fc2, rgb(24, 198, 204) 74%);
+} 
+body{
+    background-color: #c1e4ff;
+}
+
+#menu, .submenu {
+    list-style-type: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 600;
+    word-spacing: 60px;
+    }
+    
+    #menu {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center; 
+    
+    }
+    #menu > li {
+        display: inline; 
+        position: relative; 
+    }
+    #menu > li, .submenu > li {
+        padding: 18px 5px;
+        cursor: pointer;
+        width: 95%;
+        height: 100%;
+    } 
+        
+    .submenu {
+        display: none;
+        position:absolute;
+        background-color: #65b2ec;
+        width: 172px;
+        font-size: 20px;
+        padding: 2px;
+        box-shadow: 5px 5px 20px rgb(81, 80, 80);
+    }
+    
+    #li:hover {
+     background-color: #924fc2;
+     border-top: 3px solid white;
+    }
+    
+    #li:hover > .submenu {
+    display: block;
+    top:100%;
+    left:0;
+    }
+
+    .submenu > li:nth-child(1) {
+        border-bottom: 1px solid white;
+    }
